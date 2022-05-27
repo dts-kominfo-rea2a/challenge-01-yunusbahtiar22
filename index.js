@@ -6,7 +6,6 @@ const firstUser = {
     gender: 'Female',
     age: 17,
     email: 'monica@dingdong.com',
-    favoriteColor: ['Yellow', 'Ping', 'White', 'Purple'],
     isHavePet: true,
     education: [
         {
@@ -27,6 +26,10 @@ const firstUser = {
 
 };
 
+//make sure there won't be any duplicate member in these attributes
+const monicaFavoriteColor = ['Yellow', 'Ping', 'White', 'Purple']
+firstUser['favoriteColor'] = [...new Set(monicaFavoriteColor)]
+
 const monicaFavoriteRestaurant = ['Bento', 'Sushi', 'Pancake', 'Eggy', 'Tempura', 'Bento', 'Eggy', 'Padang', 'Tteok', 'Sushi', 'Sushi']
 firstUser['favoriteRestaurant'] = [...new Set(monicaFavoriteRestaurant)]
 
@@ -36,7 +39,6 @@ const secondUser = {
     gender: 'Male',
     age: 23,
     email: 'wndy@dingdong.com',
-    favoriteColor: ['Blue', 'Black', 'Grey'],
     isHavePet: false,
     education: [
         {
@@ -60,6 +62,10 @@ const secondUser = {
         }
     ],
 };
+
+// make sure there won't be any duplicate member in these attributes
+const wendyFavoriteColor = ['Blue', 'Black', 'Grey']
+secondUser['favoriteColor'] = [...new Set(wendyFavoriteColor)]
 
 const wendyFavoriteRestaurant = ['Tempura', 'Bento', 'Sushi', 'Pancake', 'Padang', 'Katsu', 'Geprek', 'Pancake', 'Eggy']
 secondUser['favoriteRestaurant'] = [...new Set(wendyFavoriteRestaurant)]
