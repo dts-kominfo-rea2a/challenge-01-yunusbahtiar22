@@ -38,7 +38,7 @@ const secondUser = {
     name: 'Wendy',
     gender: 'Male',
     age: 23,
-    email: 'wndy@dingdong.com',
+    email: 'wendy@dingdong.com',
     isHavePet: false,
     education: [
         {
