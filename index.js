@@ -6,6 +6,7 @@ const firstUser = {
     gender: 'Female',
     age: 17,
     email: 'monica@dingdong.com',
+    favoriteColor: [...new Set(['Yellow', 'Ping', 'White', 'Purple'])],
     isHavePet: true,
     education: [
         {
@@ -23,15 +24,16 @@ const firstUser = {
             city: 'Jakarta',
         }
     ],
+    favoriteRestaurant: [...new Set(['Bento', 'Sushi', 'Pancake', 'Eggy', 'Tempura', 'Bento', 'Eggy', 'Padang', 'Tteok', 'Sushi', 'Sushi'])]
 
 };
 
 //make sure there won't be any duplicate member in these attributes
-const monicaFavoriteColor = ['Yellow', 'Ping', 'White', 'Purple']
-firstUser['favoriteColor'] = [...new Set(monicaFavoriteColor)]
+// const monicaFavoriteColor = ['Yellow', 'Ping', 'White', 'Purple']
+// firstUser['favoriteColor'] = [...new Set(monicaFavoriteColor)]
 
-const monicaFavoriteRestaurant = ['Bento', 'Sushi', 'Pancake', 'Eggy', 'Tempura', 'Bento', 'Eggy', 'Padang', 'Tteok', 'Sushi', 'Sushi']
-firstUser['favoriteRestaurant'] = [...new Set(monicaFavoriteRestaurant)]
+// const monicaFavoriteRestaurant = ['Bento', 'Sushi', 'Pancake', 'Eggy', 'Tempura', 'Bento', 'Eggy', 'Padang', 'Tteok', 'Sushi', 'Sushi']
+// firstUser['favoriteRestaurant'] = [...new Set(monicaFavoriteRestaurant)]
 
 
 const secondUser = {
@@ -39,6 +41,7 @@ const secondUser = {
     gender: 'Male',
     age: 23,
     email: 'wendy@dingdong.com',
+    favoriteColor: [...new Set(['Blue', 'Black', 'Grey'])],
     isHavePet: false,
     education: [
         {
@@ -61,14 +64,16 @@ const secondUser = {
             city: 'Tangerang'
         }
     ],
+    favoriteRestaurant: [...new Set(['Tempura', 'Bento', 'Sushi', 'Pancake', 'Padang', 'Katsu', 'Geprek', 'Pancake', 'Eggy'])]
+
 };
 
 // make sure there won't be any duplicate member in these attributes
-const wendyFavoriteColor = ['Blue', 'Black', 'Grey']
-secondUser['favoriteColor'] = [...new Set(wendyFavoriteColor)]
+// const wendyFavoriteColor = ['Blue', 'Black', 'Grey']
+// secondUser['favoriteColor'] = [...new Set(wendyFavoriteColor)]
 
-const wendyFavoriteRestaurant = ['Tempura', 'Bento', 'Sushi', 'Pancake', 'Padang', 'Katsu', 'Geprek', 'Pancake', 'Eggy']
-secondUser['favoriteRestaurant'] = [...new Set(wendyFavoriteRestaurant)]
+// const wendyFavoriteRestaurant = ['Tempura', 'Bento', 'Sushi', 'Pancake', 'Padang', 'Katsu', 'Geprek', 'Pancake', 'Eggy']
+// secondUser['favoriteRestaurant'] = [...new Set(wendyFavoriteRestaurant)]
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [];
